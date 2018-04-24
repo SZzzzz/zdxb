@@ -3,4 +3,5 @@ import * as path from 'path'
 
 const tm = new TemplateMaster(path.join(__dirname, '../templates'))
 tm.register('component', 'src/components')
+tm.register('model', 'src/models')
 export default tm

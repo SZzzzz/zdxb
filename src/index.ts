@@ -1,7 +1,8 @@
-import TemplateMaster from './template-master'
-import * as path from 'path'
+import TemplateMaster from './template-master';
+import * as path from 'path';
 
-const tm = new TemplateMaster(path.join(__dirname, '../templates'))
-tm.register('component', 'src/components')
-tm.register('model', 'src/models')
-export default tm
+const tm = new TemplateMaster(path.join(__dirname, '../templates'));
+tm.register('component', 'src/components');
+tm.register('model', 'src/models');
+tm.register('store', 'src/stores');
+export default tm;

@@ -1,5 +1,6 @@
 import {} from '../apis/interface';
+import { observable } from 'mobx';
 
 export default class {% uppercamel %}Model {
-  
+
 };

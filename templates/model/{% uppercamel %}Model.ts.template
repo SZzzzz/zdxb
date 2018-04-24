@@ -1,0 +1,5 @@
+import {} from '../apis/interface';
+
+export default class {% uppercamel %}Model {
+  
+};

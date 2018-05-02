@@ -1,0 +1,5 @@
+import BaseApi from './BaseApi';
+
+export default class {% uppercamel %}Api extends BaseApi {
+
+};

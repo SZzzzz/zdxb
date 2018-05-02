@@ -12,7 +12,7 @@ interface {% uppercamel %}State {
 export default class {% uppercamel %} extends Component<{% uppercamel %}Props, {% uppercamel %}State> {
   render() {
     return (
-      <div className="{% kebab %}-container">
+      <div className="{% kebab %}">
 
       </div>
     );

@@ -6,4 +6,5 @@ tm.register('component', 'src/components');
 tm.register('model', 'src/models');
 tm.register('store', 'src/stores');
 tm.register('api', 'src/apis');
+tm.register('table', 'src/components');
 export default tm;

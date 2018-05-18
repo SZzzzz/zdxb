@@ -1,0 +1,29 @@
+import React from 'react';
+import { Table } from 'antd';
+import { ColumnProps, TableProps } from 'antd/lib/table';
+import {% uppercamel %}Model from '../../models/{% uppercamel %}Model';
+
+export type TableColumns = ColumnProps<{% uppercamel %}Model>[];
+const defaultColumns: TableColumns = [
+
+];
+
+interface {% uppercamel %}TableProps extends TableProps<{% uppercamel %}Model> {
+  action?: TableColumns;
+}
+
+const {% uppercamel %}Table: React.StatelessComponent<{% uppercamel %}TableProps> = ({
+  action,
+  columns,
+  ...rest
+}) => {
+  let finalColumns: TableColumns;
+  if (!!columns && !action) {
+    finalColumns = columns;
+  } else {
+    finalColumns = [...defaultColumns, ...(action || [])];
+  }
+  return <Table {...rest} columns={finalColumns} />;
+};
+
+export default {% uppercamel %}Table;
